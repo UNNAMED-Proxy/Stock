@@ -3,17 +3,8 @@ import pymysql
 def dbConnect1():
     # MariaDB 연결 정보 설정
     host = 'localhost'
-    user = 'root'
-    password = 'dlrjtdms1!'
-
-    """
-    MariaDB에 연결하는 함수
-    :param host: 호스트 주소
-    :param user: 사용자 이름
-    :param password: 비밀번호
-    :param database: 데이터베이스 이름
-    :return: 연결 객체
-    """
+    user = user_name
+    password = user_password
 
     conn = None
     try:
@@ -35,19 +26,11 @@ def dbConnect1():
 def dbConnect2():
     # MariaDB 연결 정보 설정
     host = 'localhost'
-    user = 'root'
-    password = 'dlrjtdms1!'
+    user = user_name
+    password = user_password
     database = 'Stock'
     tablename = 'StockList'
 
-    """
-    MariaDB에 연결하는 함수
-    :param host: 호스트 주소
-    :param user: 사용자 이름
-    :param password: 비밀번호
-    :param database: 데이터베이스 이름
-    :return: 연결 객체
-    """
     conn = None
     try:
         # MariaDB 연결
